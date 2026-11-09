@@ -3,7 +3,8 @@ const express = require('express');
 const app = express();
 
 const db = require('./db');
-
+require('dotenv').config();
+const Port = process.env.Port ||3000;
 
 
 // Middleware
